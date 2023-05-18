@@ -6,7 +6,10 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
         <div className="container">
           <a className="navbar-brand fw-bold fs-4" href="#">
-            VĂN PHÒNG PHẨM
+            <img
+                src="/assets/Logo/logo.png"
+                height="50px"
+            />
           </a>
           <button
             className="navbar-toggler"
@@ -23,35 +26,35 @@ export default function Navbar() {
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
-                  Home
+                  Trang chủ
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Product
+                  Sản phẩm
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  About
+                  Về chúng tôi
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Contact
+                  Liên hệ
                 </a>
               </li>
             </ul>
             <div className="buttons">
               <button className="btn">
                 <a href="" className="btn btn-outline-dark">
-                  <i className="fa fa-sign-in me-1"></i>Login
+                  <i className="fa fa-sign-in me-1"></i>Đăng nhập
                 </a>
                 <a href="" className="btn btn-outline-dark ms-2">
-                  <i className="fa fa-user-plus me-1"></i> Register
+                  <i className="fa fa-user-plus me-1"></i> Đăng ký
                 </a>
                 <a href="" className="btn btn-outline-dark ms-2">
-                  <i className="fa fa-cart-plus me-1"></i>Cart (0)
+                  <i className="fa fa-cart-plus me-1"></i>Giỏ hàng (0)
                 </a>
               </button>
             </div>
