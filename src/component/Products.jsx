@@ -14,27 +14,30 @@ function Products() {
     return (
       <>
         <div className="buttons d-flex justify-content-center mb-5 pb-5">
-          <button className="btn btn-outline-dark me-2"> All </button>
-          <button className="btn btn-outline-dark me-2"> Sach </button>
-          <button className="btn btn-outline-dark me-2"> Tap </button>
-          <button className="btn btn-outline-dark me-2"> But </button>
-          <button className="btn btn-outline-dark me-2"> Thuoc </button>
+          <button className="btn btn-outline-dark me-2"> Tất cả sản phẩm </button>
+          <button className="btn btn-outline-dark me-2"> Giấy In ấn - Photo </button>
+          <button className="btn btn-outline-dark me-2"> Bìa - Kệ - Rổ </button>
+          <button className="btn btn-outline-dark me-2"> Sổ - Tập - Bao thư </button>
+          <button className="btn btn-outline-dark me-2"> Băng keo - Dao - Kéo </button>
+          <button className="btn btn-outline-dark me-2"> Bút - Mực </button>
+          <button className="btn btn-outline-dark me-2"> Dụng cụ văn phòng </button>
+          <button className="btn btn-outline-dark me-2"> Máy tính Casio </button>
         </div>
-        {filter.map((product) => {
+        {filter.map((products) => {
           return (
-            <div className="col-md-3 h-100 text-center" key={product.id}>
+            <div className="col-md-3 h-100 text-center" key={products.id}>
               <div class="card">
                 <img
-                  src={product.image}
+                  src={products.image}
                   class="card-img-top"
-                  alt={product.title}
+                  alt={products.title}
                 />
                 <div class="card-body">
-                  <h5 class="card-title">{product.title}</h5>
-                  <p class="card-text"> {product.price}</p>
-                  <p className="card-text">{product.des}</p>
+                  <h5 class="card-title">{products.title}</h5>
+                  <p class="card-text"> {products.price}</p>
+                  <p className="card-text">{products.des}</p>
                   <a href="#" class="btn btn-primary">
-                    Go somewhere
+                    Thêm vào giỏ hàng
                   </a>
                 </div>
               </div>
@@ -52,7 +55,7 @@ function Products() {
           <div className="col-12 mb-5">
             <h1 className="display-6 fw-bolder text-center">
               {" "}
-              Latest products
+              Sản phẩm mới nhất
             </h1>
             <hr />
           </div>

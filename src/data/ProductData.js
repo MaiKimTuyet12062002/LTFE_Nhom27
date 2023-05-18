@@ -1,17 +1,19 @@
+import React from "react";
+
 const products= [
     {
         id:1 ,
-        name:  "Hộp 20 Bút Bi Thiên Long TL036",
-        image: "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_400/https://vanphong-pham.com/wp-content/uploads/2022/08/036-400x400.jpg",
-        des: "Bút nước đều màu.",
-        price:220000
+        name:  "Giấy in BILL",
+        image: "https://cdn.fast.vn/tmp/20200917103116-e8ffde644ffd29fbb2d6f7453a77e655.jpg",
+        des: "Giấy in BILL tính tiền 5F - K57x38 (1 cuộn)",
+        price:3900
     }  ,
     {
         id: 2,
-        name: "Tập học sinh 96 trang / 200 trang ĐL 70gsm (4 ô ly) – FUTUREBOOK",
-        image: "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_400/https://vanphong-pham.com/wp-content/uploads/2021/12/200t-400x400.jpg",
-        des: "Tập với chất liệu giấy chắc chắn thích hợp cho học sinh và sinh viên.",
-        price: 10000
+        name: "Giấy in BILL tính tiền 8F",
+        image: "https://cdn.fast.vn/tmp/20230202163150-450.jpg",
+        des: "Giấy in BILL tính tiền 8F - K80x45 (1 cuộn)",
+        price: 4850
     }  ,
     {
         id: 3,
