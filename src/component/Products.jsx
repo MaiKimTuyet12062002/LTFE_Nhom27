@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import ProductsData from "../data/ProductData.js";
 import Skeleton from "react-loading-skeleton";
+import { NavLink } from "react-router-dom";
 
 function Products() {
     const [data, setData] = useState(ProductsData);
@@ -25,6 +26,7 @@ function Products() {
     };
     const filterProduct = (cat) => {
         const updatedList = data.filter((x) => x.category === cat);
+
         setFilter(updatedList);
     }
 
@@ -54,9 +56,9 @@ function Products() {
                                     <h5 class="card-title">{product.title}</h5>
                                     <p class="card-text"> {product.price}</p>
                                     <p className="card-text">{product.des}</p>
-                                    <a to="#" class="btn btn-primary">
-                                        Go somewhere
-                                    </a>
+                                    <NavLink to={'/products/${product.id}'} class="btn btn-primary">
+                                        Mua ngay
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +75,7 @@ function Products() {
                     <div className="col-12 mb-5">
                         <h1 className="display-6 fw-bolder text-center">
                             {" "}
-                            Latest products
+                           Sản phẩm mới nhất
                         </h1>
                         <hr/>
                     </div>
