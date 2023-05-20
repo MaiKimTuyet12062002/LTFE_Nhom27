@@ -1,8 +1,10 @@
 .about {
-    /* max-width: 800px; */
-    /* margin: 0 auto; */
+    padding: 0;
+    margin: 0;
+    height: 700px;
     font-family: Arial, sans-serif;
-    background-image: url("/public/assets/about3.jpg");
+    background-image: url("/public/assets/about.jpg");
+    height: 1200px;
 
 }
 
@@ -19,9 +21,16 @@ h1 {
 p {
     text-align: justify;
     line-height: 1.5;
-    color: rgb(248, 249, 246);
+    /* color: rgb(244, 9, 9); */
     margin-top: 40px;
     margin-bottom: 1rem;
     padding-left: 65px;
     padding-right: 80px;
+}
+.l1 {
+    color: #2c1d0a;
+}
+.about div {
+    padding: 130px;
+    margin: -25px 190px 0 0px;
 }

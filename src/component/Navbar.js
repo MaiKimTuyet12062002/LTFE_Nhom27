@@ -8,7 +8,8 @@ export default function Navbar() {
         <div className="container">
           <NavLink className="navbar-brand fw-bold fs-4" to="/" >
             <img
-                src="/assets/Logo/logo.png"
+                alt="logo"
+                src="public/assets/Logo/logo.png"
                 height="50px"
             />
           </NavLink>
