@@ -1,22 +1,25 @@
 import './App.css';
 import Home from './component/Home';
 import Navbar from './component/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Products from './component/Products';
 import Product from './component/Product';
 import About from './component/About';
+import Contact from "./component/Contact";
 
 function App() {
-  return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/products" element={<Products />} />
-        <Route exact path="/products/:id" element={<Product/>} />
-        <Route exact path="/About" element={<About />} />
-      </Routes>
-    </Router>
-  );
+    return (
+        <Router>
+            <Navbar/>
+            <Routes>
+                <Route exact path="/" element={<Home/>}/>
+                <Route exact path="/products" element={<Products/>}/>
+                <Route exact path="/products/:id" element={<Product/>}/>
+                <Route exact path="/About" element={<About/>}/>
+                <Route exact path="/contact" element={<Contact/>}/>
+            </Routes>
+        </Router>
+    );
 }
+
 export default App;
