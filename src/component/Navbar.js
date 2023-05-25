@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import {NavLink} from "react-router-dom";
+import Login from "./Login";
+import Products from "./Products";
 
 export default function Navbar() {
   return (
@@ -9,7 +11,7 @@ export default function Navbar() {
           <NavLink className="navbar-brand fw-bold fs-4" to="/" >
             <img
                 alt="logo"
-                src="public/assets/Logo/logo.png"
+                src="/assets/Logo/logo.png"
                 height="50px"
             />
           </NavLink>
@@ -49,8 +51,8 @@ export default function Navbar() {
             </ul>
             <div className="buttons">
               <button className="btn">
-                <NavLink to="/login" className="btn btn-outline-dark">
-                  <i className="fa fa-sign-in me-1"></i>Đăng nhập
+                <NavLink to="/login" className="nav-link" className="btn btn-outline-dark ms-2">
+                  <i className="fa fa-user-plus me-1"></i> Đăng nhập
                 </NavLink>
                 <NavLink to="/register" className="btn btn-outline-dark ms-2">
                   <i className="fa fa-user-plus me-1"></i> Đăng ký
@@ -59,10 +61,14 @@ export default function Navbar() {
                   <i className="fa fa-cart-plus me-1"></i>Giỏ hàng (0)
                 </NavLink>
               </button>
+
+              <Login/>
             </div>
+
           </div>
         </div>
       </nav>
     </div>
+
   );
 }
