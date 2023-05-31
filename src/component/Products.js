@@ -50,11 +50,11 @@ function Products() {
                                 <img
                                     src={product.image}
                                     class="card-img-top"
-                                    alt={product.title}
+                                    alt={product.name}
                                 />
                                 <div class="card-body">
-                                    <h5 class="card-title">{product.title}</h5>
-                                    <p class="card-text"> {product.price}</p>
+                                    <h5 class="card-title">{product.name}</h5>
+                                    <p class="card-text" > {product.price}</p>
                                     <p className="card-text">{product.des}</p>
                                     <NavLink to={'/products/${product.id}'} class="btn btn-primary">
                                         Mua ngay
