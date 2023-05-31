@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import ProductsData from "../data/ProductData.js";
 import Skeleton from "react-loading-skeleton";
-import { NavLink } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 function Products() {
     const [data, setData] = useState(ProductsData);
@@ -54,11 +54,9 @@ function Products() {
                                 />
                                 <div class="card-body">
                                     <h5 class="card-title">{product.name}</h5>
-                                    <p class="card-text" > {product.price}</p>
+                                    <p class="card-text" >{product.price}đ</p>
                                     <p className="card-text">{product.des}</p>
-                                    <NavLink to={'/products/${product.id}'} class="btn btn-primary">
-                                        Mua ngay
-                                    </NavLink>
+                                    <NavLink to={`/products/${product.id}`} class="btn btn-outline-primary">Xem ngay</NavLink>
                                 </div>
                             </div>
                         </div>
