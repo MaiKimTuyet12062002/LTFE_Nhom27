@@ -7,6 +7,7 @@ import Product from './component/ProductDetail';
 import About from './component/About';
 import Contact from "./component/Contact";
 import Login from "./component/buttons/Login";
+import Signup from './component/buttons/Signup';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Route exact path="/About" element={<About/>}/>
                 <Route exact path="/contact" element={<Contact/>}/>
                 <Route exact path="/login" element={<Login/>}/>
+                <Route exact path="/register" element={<Signup/>}/>
             </Routes>
         </Router>
     );
