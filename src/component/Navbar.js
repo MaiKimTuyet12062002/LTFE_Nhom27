@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {NavLink} from "react-router-dom";
-import Login from "./Login";
+import Login from "./buttons/Login";
 import Products from "./Products";
 
 export default function Navbar() {
@@ -51,7 +51,7 @@ export default function Navbar() {
             </ul>
             <div className="buttons">
               <button className="btn">
-                <NavLink to="/login" className="nav-link" className="btn btn-outline-dark ms-2">
+              <NavLink to="/login" className="btn btn-outline-dark ms-2">
                   <i className="fa fa-user-plus me-1"></i> Đăng nhập
                 </NavLink>
                 <NavLink to="/register" className="btn btn-outline-dark ms-2">
@@ -61,8 +61,6 @@ export default function Navbar() {
                   <i className="fa fa-cart-plus me-1"></i>Giỏ hàng (0)
                 </NavLink>
               </button>
-
-              <Login/>
             </div>
 
           </div>

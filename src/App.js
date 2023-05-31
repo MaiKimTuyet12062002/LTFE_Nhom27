@@ -3,9 +3,10 @@ import Home from './component/Home';
 import Navbar from './component/Navbar';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Products from './component/Products';
-import Product from './component/Product';
+import Product from './component/ProductDetail';
 import About from './component/About';
 import Contact from "./component/Contact";
+import Login from "./component/buttons/Login";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Route exact path="/products/:id" element={<Product/>}/>
                 <Route exact path="/About" element={<About/>}/>
                 <Route exact path="/contact" element={<Contact/>}/>
+                <Route exact path="/login" element={<Login/>}/>
             </Routes>
         </Router>
     );
