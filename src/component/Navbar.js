@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import {NavLink} from "react-router-dom";
-import Login from "./buttons/Login";
-import Products from "./Products";
 
 export default function Navbar() {
   return (

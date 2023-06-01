@@ -25,10 +25,10 @@ function Contact() {
                                        placeholder="ten@gmail.com"/>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                <label for="exampleFormControlTextarea1" class="form-label">Nội dung phản hồi: </label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-outline-primary">Send Message</button>
+                            <button type="submit" class="btn btn-outline-primary">Gửi</button>
                         </form>
                     </div>
                 </div>
