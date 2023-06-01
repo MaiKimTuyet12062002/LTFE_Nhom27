@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import ProductsData from "../data/ProductData.js";
 import Skeleton from "react-loading-skeleton";
 import {NavLink} from "react-router-dom";
-
+import "./css/home.css"
 function Products() {
     const [data, setData] = useState(ProductsData);
     const [filter, setFilter] = useState(data);
@@ -45,7 +45,7 @@ function Products() {
                 </div>
                 {filter.map((product) => {
                     return (
-                        <div className="col-md-3 h-100 text-center" key={product.id}>
+                        <div className="col-md-3 h-100 text-center py-4" key={product.id}>
                             <div class="card">
                                 <img
                                     src={product.image}
@@ -54,8 +54,8 @@ function Products() {
                                 />
                                 <div class="card-body">
                                     <h5 class="card-title">{product.name}</h5>
-                                    <p class="card-text" >{product.price}đ</p>
-                                    <p className="card-text">{product.des}</p>
+                                    <p class="card-text text-center" >{product.price}đ</p>
+                                    {/*<p className="card-text">{product.des}</p>*/}
                                     <NavLink to={`/products/${product.id}`} class="btn btn-outline-primary">Xem ngay</NavLink>
                                 </div>
                             </div>
