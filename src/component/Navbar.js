@@ -11,7 +11,7 @@ export default function Navbar() {
                         <img
                             alt="logo"
                             src="/assets/Logo/logo.png"
-                            height="50px"
+                            height="80px"
                         />
                     </NavLink>
                     <button
