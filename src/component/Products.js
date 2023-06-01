@@ -47,15 +47,16 @@ function Products() {
                     return (
                         <div className="col-md-3 h-100 text-center py-4" key={product.id}>
                             <div class="card">
+                                <div class="image">
                                 <img
                                     src={product.image}
                                     class="card-img-top"
                                     alt={product.name}
                                 />
+                                </div>
                                 <div class="card-body">
                                     <h5 class="card-title">{product.name}</h5>
-                                    <p class="card-text text-center" >{product.price}đ</p>
-                                    {/*<p className="card-text">{product.des}</p>*/}
+                                    <p class="card-text text-center">{product.price}đ</p>
                                     <NavLink to={`/products/${product.id}`} class="btn btn-outline-primary">Xem ngay</NavLink>
                                 </div>
                             </div>
