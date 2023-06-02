@@ -54,7 +54,7 @@ const Checkout = () => {
                                                placeholder="Nhập địa chỉ email"
                                                required=""/>
                                         <div className="invalid-feedback">
-                                            Your username is required.
+                                            Tên người dùng là bắt buộc.
                                         </div>
                                     </div>
                                 </div>
@@ -65,34 +65,34 @@ const Checkout = () => {
                                     <input type="email" className="form-control" id="email"
                                            placeholder="you@example.com"/>
                                     <div className="invalid-feedback">
-                                        Please enter a valid email address htmlFor shipping updates.
+                                        Vui lòng nhập địa chỉ email hợp lệ. Để cập nhật thông tin vận chuyển.
                                     </div>
                                 </div>
 
                                 <div className="col-12">
-                                    <label htmlFor="address" className="form-label">Address</label>
+                                    <label htmlFor="address" className="form-label">Địa chỉ</label>
                                     <input type="text" className="form-control" id="address" placeholder="1234 Main St"
                                            required=""/>
                                     <div className="invalid-feedback">
-                                        Please enter your shipping address.
+                                        Vui lòng nhập địa chỉ.
                                     </div>
                                 </div>
 
                                 <div className="col-12">
-                                    <label htmlFor="address2" className="form-label">Address 2 <span
+                                    <label htmlFor="address2" className="form-label">Địa chỉ khác<span
                                         className="text-muted">(Optional)</span></label>
                                     <input type="text" className="form-control" id="address2"
                                            placeholder="Apartment or suite"/>
                                 </div>
 
                                 <div className="col-md-5">
-                                    <label htmlFor="country" className="form-label">Country</label>
+                                    <label htmlFor="country" className="form-label">Quốc gia</label>
                                     <select className="form-select" id="country" required="">
-                                        <option value="">Choose...</option>
-                                        <option>United States</option>
+                                        <option value="">Chọn...</option>
+                                        <option>Việt Nam</option>
                                     </select>
                                     <div className="invalid-feedback">
-                                        Please select a valid country.
+                                        Vui lòng chọn một quốc gia hợp lệ.
                                     </div>
                                 </div>
 
@@ -120,13 +120,12 @@ const Checkout = () => {
 
                             <div className="form-check">
                                 <input type="checkbox" className="form-check-input" id="same-address"/>
-                                <label className="form-check-label" htmlFor="same-address">Shipping address is the same
-                                    as my billing address</label>
+                                <label className="form-check-label" htmlFor="same-address">Địa chỉ giao hàng mặc định</label>
                             </div>
 
                             <div className="form-check">
                                 <input type="checkbox" className="form-check-input" id="save-info"/>
-                                <label className="form-check-label" htmlFor="save-info">Save this information htmlFor
+                                <label className="form-check-label" htmlFor="save-info">Lưu thông tin htmlFor
                                     next time</label>
                             </div>
 
