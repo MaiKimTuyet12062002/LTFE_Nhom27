@@ -109,9 +109,197 @@ const products= [
     {
         id: 16,
         name: "Băng keo đục 5F - 100Y",
-        image: "https://cdn.fast.vn/tmp/20200719122226-2-1-.jpg",
+        image: "https://cdn.fast.vn/tmp/20220825153643-capture.PNG",
         des: "Giao hàng miễn phí (nếu cách Viettel Store dưới 10km). Bảo hành chính hãng",
         price: 7500
     },
+    {
+        id: 17,
+        name: "Giấy ghi chú / giấy note 4 màu dạ quang 3x3 GS-04",
+        image: "https://cdn.fast.vn/tmp/20210217132014-9.JPG",
+        des: "Giấy ghi chú 4 màu dạ quang 3x3 GS-04\n" +
+            "\n" +
+            "Quy cách: 4 màu/vỉ",
+        price: 7500
+    },
+    {
+        id: 18,
+        name: "BGiấy A4 Double A 80 Gsm",
+        image: "https://cdn.fast.vn/tmp/20200718201248-6.jpg",
+        des: "Giao hàng miễn phí (nếu cách Viettel Store dưới 10km). Bảo hành chính hãng",
+        price: 79000
+    },
+    {
+        id: 19,
+        name: "Bao thư hồ sơ A4 - vàng (1 Cái)",
+        image: "https://cdn.fast.vn/tmp/20201225163141-3.PNG",
+        des: "Đơn Vị Tính : Cái\n" +
+            "Quy Cách : 100 Cái / Xấp",
+        price: 1200
+    },
+    {
+        id: 20,
+        name: "Phiếu chi 2 liên dầy 13x19",
+        image: "https://cdn.fast.vn/image/data/7/41783pc.jpg",
+        des: "Giao hàng miễn phí (nếu cách Viettel Store dưới 10km). Bảo hành chính hãng",
+        price: 12800
+    },
+    {
+        id: 21,
+        name: "Bìa còng 7F ABBA",
+        image: "https://cdn.fast.vn/tmp/20200929163857-ce4cd54ce7d6559ae43f1394d39a6861.jpg",
+        des: "Công dụng Bìa còng 5-7cm giúp lưu trữ tài liệu một .cách tiết kiệm không gian cho mọi văn phòng.",
+        price: 22000
+    },
+    {
+        id: 22,
+        name: "Bìa nhựa quấn dây F4 - màu trắng (1 cái)",
+        image: "https://cdn.fast.vn/image/data/15/60049qd.jpg",
+        des: "Đặc điểm:\n" +
+            "\n" +
+            "                        Vật liệu PP đặc biệt chịu va đập cao.\n" +
+            "\n" +
+            "                        Có thể lưu trữ tối đa 125 tờ A4\n" +
+            "\n" +
+            "                        Đường hàn chắc\n" +
+            "\n" +
+            "                        Sản phẩm có in hoa văn đẹp và sắc nét",
+        price: 6000
+    },
+    {
+        id: 23,
+        name: "Bìa 3 dây TN 20F",
+        image: "https://cdn.fast.vn/tmp/20220729134349-b58f3d896c6e7428a412f364d4aa94fe_tn.jpg",
+        des: "Công dụng: Bìa 3 dây, tiện lợi trong việc lưu trữ tài liệu, hồ sơ trong văn phòng.\n" +
+            "Đặc Điểm: là sản phẩm với nguyên liệu làm bằng bìa giấy cứng, độ dày gáy khoảng 7F, có 3 dây nằm ở 3 cạnh bìa chắc chắn giúp lưu trữ hồ sơ với số lượng lớn",
+        price: 13000
+    },
+    {
+        id: 24,
+        name: "Rổ nhựa xéo 3 ngăn TTM",
+        image: "https://cdn.fast.vn/image/data/Bia/6353ke-ro-xeo-3-ngan-lien-hoan.jpg",
+        des: "Là sản phẩm được làm bằng nhựa kích cỡ 30 x 30 x 12 cm, 3 ngăn đứng liên hoàn - với chiều rộng mỗi ngăn khoảng 10cm chứa chứng từ các khổ A4-A5-A6, màu phổ biến: xanh dương. Sản phẩm được sử dụng để lưu trữ các chứng từ để tạo sự chuyên nghiệp, thuận tiện cho công việc văn phòng hàng ngày của bạn.",
+        price: 22500
+    },
+    {
+        id: 25,
+        name: "Bìa còng nhẫn nhựa 3.5cm",
+        image: "https://cdn.fast.vn/tmp/20210217082814-biacongnhan3-5cm.jpg",
+        des: "Công dụng – Lưu và cất trữ các giấy tờ tài liệu. Tạo cho chúng một nơi để ngăn nắp theo thứ tự, dễ dàng khi tìm kiếm.",
+        price: 15000
+    },
+    {
+        id: 26,
+        name: "Thẻ Zipper Dọc TL207 (7.5x11cm) + Dây Dù Kẹp",
+        image: "https://cdn.fast.vn/tmp/20220716094718-dsa.PNG",
+        des: "Thẻ Zipper Dọc TL207 (7.5x11cm) + Dây Dù Kẹp",
+        price: 2800
+    },
+    {
+        id: 27,
+        name: "Kim bấm số 10 Plus",
+        image: "https://cdn.fast.vn/tmp/20210217090347-6.JPG",
+        des: "Công dụng Kim bấm số 10 Plus là loại kim dùng cho dụng cụ bấm kim số 10 giúp giữ cho các tập tài liệu giấy chắc chắn không bị bung rời, có thể sử dụng cho nhiều loại bấm kim số 10.",
+        price: 2500
+    },
+    {
+        id: 28,
+        name: "Kẹp giấy tam giác C62",
+        image: "https://cdn.fast.vn/tmp/20200512141952-szwi4f_simg_de2fe0_500x500_maxb.jpg",
+        des: "Công dụng có thể kẹp chặt lượng tài liệu ít, mỏng tối đa 10 tờ A4 để không bị bung rời.",
+        price: 2300
+    },
+    {
+        id: 29,
+        name: "Đồ bấm kim số 10 Plus",
+        image: "https://cdn.fast.vn/tmp/20210217090255-4.JPG",
+        des: "Bấm kim số 10 Plus được sản xuất tại nhà máy ở Khu công nghiệp Nhơn Trạch, tỉnh Đồng Nai bằng công nghệ Nhật Bản nên quý khách hàng có thể yên tâm vào chất lượng, hơn nữa với Bấm kim số 10 Plus đã được tạo được 1 thương hiệu vững chắc, đã đang và sẽ đồng hành cùng thành công của quý vị.",
+        price: 25500
+    },
+    {
+        id: 30,
+        name: "Cây ghim giấy",
+        image: "https://cdn.fast.vn/image/data/tap_pham/46953cay%20ghim%20giay.jpg",
+        des: "Công dụng Tiện dụng trong văn phòng.\n" +
+            "Dùng để ghim giữ các liên giấy, tài liệu rời...",
+        price: 15000
+    },
+    {
+        id: 31,
+        name: "Dao rọc giấy SDI lớn 0423",
+        image: "https://cdn.fast.vn/tmp/20210217101223-0423.JPG",
+        des: "Công dụng là dụng cụ hữu ích cho nhiều ngành nghề và đối tượng, từ học sinh, sinh viên, nhân viên công sở đến thợ chế tác thủ công, thợ điện, ngành đóng gói… Một chiếc dao sắc bén, tiện dụng sẽ giúp bạn hoàn thành công việc nhanh hơn, tiết kiệm thời gian.",
+        price: 11000
+    },
+    {
+        id: 32,
+        name: "Kéo Văn Phòng Deli 6009 - 18cm",
+        image: "https://cdn.fast.vn/image/data/22/893441.jpg",
+        des: "Lưỡi kéo làm từ hợp kim thép cao cấp sắc nhưng đảm bảo an toàn, không nhọn, không làm đau xước tay và cũng không phải lo cắt vào tay làm đau tay",
+        price: 25000
+    },
+    {
+        id: 33,
+        name: "Kéo cắt chỉ / Kéo bấm",
+        image: "https://cdn.fast.vn/image/data/01072019/300819/8802858d13f87b683b-21-03-2017-090713-2jpg.jpg",
+        des: "Giao hàng miễn phí (nếu cách Viettel Store dưới 10km). Bảo hành chính hãng",
+        price: 6400
+    },
+    {
+        id: 34,
+        name: "Súng bắn tem mác quần áo",
+        image: "https://cdn.fast.vn/tmp/20230218073533-5.PNG",
+        des: "Chức năng: dùng để đưa gọng nhựa nối quần /áo với 1 nhãn , mác, side quần áo một cách dể dàng dể dàng",
+        price: 50000
+    },
+    {
+        id: 35,
+        name: "Bìa còng 7F ABBA",
+        image: "https://cdn.fast.vn/tmp/20200929163857-ce4cd54ce7d6559ae43f1394d39a6861.jpg",
+        des: "Công dụng Bìa còng 5-7cm giúp lưu trữ tài liệu một .cách tiết kiệm không gian cho mọi văn phòng.",
+        price: 22000
+    },
+    {
+        id: 36,
+        name: "Băng keo bấm giá - màu xanh",
+        image: "https://cdn.fast.vn/image/data/15/81730xanh.jpg",
+        des: "Giao hàng miễn phí (nếu cách Viettel Store dưới 10km). Bảo hành chính hãng",
+        price: 3600
+    },
+    {
+        id: 37,
+        name: "Máy tính DS-480",
+        image: "https://cdn.fast.vn/image/data/222371.PNG",
+        des: " Kích thước: 13,5cm*18,5cm",
+        price: 110000
+    },
+    {
+        id: 38,
+        name: "Máy tính DS - 3018",
+        image: "https://cdn.fast.vn/tmp/20230215130937-1.PNG",
+        des: "Màn hình máy tính CASIO DS-3018 được thiết kế to rộng và các số được hiển thị sắc nét, giúp bạn có thể dễ dàng quan sát rõ ràng, tránh cận thị.",
+        price: 125000
+    },
+    {
+        id: 39,
+        name: "Máy tính Casio AX 12B",
+        image: "https://cdn.fast.vn/tmp/20200702152447-2.PNG",
+        des: "Kích thước (Sâu × Rộng × Cao) : 175,5×110,5×25mm",
+        price: 215000
+    },
+    {
+        id: 40,
+        name: "Đĩa CD Maxell",
+        image: "https://cdn.fast.vn/tmp/20200729092831-dia-cd-maxell.jpg",
+        des: "- Hãng sản xuất: Maxell\n" +
+            "\n" +
+            "- Nơi sản xuất: Đài Loan\n" +
+            "\n" +
+            "- Dung lượng đĩa: 700MB\n" +
+            "\n" +
+            "- Kiểu đĩa: CD-R (Ghi 1 lần)",
+        price: 5000
+    },
+
 ];
 export default products;
