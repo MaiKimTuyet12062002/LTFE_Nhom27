@@ -34,16 +34,9 @@ const Checkout = () => {
                                 <strong>{total}</strong>
                             </li>
                         </ul>
-
-                        <form className="card p-2">
-                            <div className="input-group">
-                                <input type="text" className="form-control" placeholder="Promo code"/>
-                                <button type="submit" className="btn btn-secondary">Redeem</button>
-                            </div>
-                        </form>
                     </div>
                     <div className="col-md-7 col-lg-8">
-                        <h4 className="mb-3">Địa chỉ thanh toán</h4>
+                        <h4 className="mb-3">Thông tin đặt hàng</h4>
                         <form className="needs-validation" novalidate="">
                             <div className="row g-3">
                                 <div className="col-12">
@@ -60,29 +53,27 @@ const Checkout = () => {
                                 </div>
 
                                 <div className="col-12">
-                                    <label htmlFor="email" className="form-label">Email <span
-                                        className="text-muted">(Optional)</span></label>
-                                    <input type="email" className="form-control" id="email"
-                                           placeholder="you@example.com"/>
+                                    <label htmlFor="username" className="form-label">Họ và tên<span
+                                        className="text-muted"></span></label>
+                                    <input type="username" className="form-control" id="username"
+                                           placeholder="Họ và tên"/>
                                     <div className="invalid-feedback">
-                                        Vui lòng nhập địa chỉ email hợp lệ. Để cập nhật thông tin vận chuyển.
+                                        Vui lòng nhập Họ và tên.
                                     </div>
                                 </div>
 
                                 <div className="col-12">
                                     <label htmlFor="address" className="form-label">Địa chỉ</label>
-                                    <input type="text" className="form-control" id="address" placeholder="1234 Main St"
-                                           required=""/>
+                                    <input type="text" className="form-control" id="address" required=""/>
                                     <div className="invalid-feedback">
                                         Vui lòng nhập địa chỉ.
                                     </div>
                                 </div>
 
                                 <div className="col-12">
-                                    <label htmlFor="address2" className="form-label">Địa chỉ khác<span
-                                        className="text-muted">(Optional)</span></label>
-                                    <input type="text" className="form-control" id="address2"
-                                           placeholder="Apartment or suite"/>
+                                    <label htmlFor="number" className="form-label">Số điện thoại<span
+                                        className="text-muted"></span></label>
+                                    <input type="number" className="form-control" id="number"/>
                                 </div>
 
                                 <div className="col-md-5">
@@ -95,103 +86,84 @@ const Checkout = () => {
                                         Vui lòng chọn một quốc gia hợp lệ.
                                     </div>
                                 </div>
-
                                 <div className="col-md-4">
-                                    <label htmlFor="state" className="form-label">State</label>
+                                    <label htmlFor="state" className="form-label">Tỉnh/TP</label>
                                     <select className="form-select" id="state" required="">
-                                        <option value="">Choose...</option>
-                                        <option>California</option>
+                                        <option value="">Chọn...</option>
+                                        <option>Hồ Chí Minh</option>
                                     </select>
                                     <div className="invalid-feedback">
-                                        Please provide a valid state.
+                                        Vui lòng chọn một Tỉnh/TP hợp lệ.
                                     </div>
                                 </div>
-
                                 <div className="col-md-3">
-                                    <label htmlFor="zip" className="form-label">Zip</label>
-                                    <input type="text" className="form-control" id="zip" placeholder="" required=""/>
+                                    <label htmlFor="zip" className="form-label">Xã/Phường</label>
+                                    <select className="form-select" id="state" required="">
+                                        <option value="">Chọn...</option>
+                                        <option>Thủ Đức</option>
+                                    </select>
                                     <div className="invalid-feedback">
-                                        Zip code required.
+                                        Vui lòng chọn một Xã/Phường hợp lệ.
                                     </div>
                                 </div>
                             </div>
-
                             <hr className="my-4"/>
-
                             <div className="form-check">
                                 <input type="checkbox" className="form-check-input" id="same-address"/>
                                 <label className="form-check-label" htmlFor="same-address">Địa chỉ giao hàng mặc định</label>
                             </div>
-
                             <div className="form-check">
                                 <input type="checkbox" className="form-check-input" id="save-info"/>
-                                <label className="form-check-label" htmlFor="save-info">Lưu thông tin htmlFor
-                                    next time</label>
+                                <label className="form-check-label" htmlFor="save-info">Lưu thông tin</label>
                             </div>
-
                             <hr className="my-4"/>
-
-                            <h4 className="mb-3">Payment</h4>
-
+                            <h4 className="mb-3">Phương thức thanh toán</h4>
                             <div className="my-3">
                                 <div className="form-check">
                                     <input id="credit" name="paymentMethod" type="radio" className="form-check-input"
                                            checked="" required=""/>
-                                    <label className="form-check-label" htmlFor="credit">Credit card</label>
+                                    <label className="form-check-label" htmlFor="credit">Chuyển khoản</label>
                                 </div>
                                 <div className="form-check">
                                     <input id="debit" name="paymentMethod" type="radio" className="form-check-input"
                                            required=""/>
-                                    <label className="form-check-label" htmlFor="debit">Debit card</label>
+                                    <label className="form-check-label" htmlFor="debit">Thanh toán khi nhận hàng</label>
                                 </div>
                                 <div className="form-check">
                                     <input id="paypal" name="paymentMethod" type="radio" className="form-check-input"
                                            required=""/>
-                                    <label className="form-check-label" htmlFor="paypal">PayPal</label>
+                                    <label className="form-check-label" htmlFor="paypal">Credit Card</label>
                                 </div>
                             </div>
-
                             <div className="row gy-3">
                                 <div className="col-md-6">
-                                    <label htmlFor="cc-name" className="form-label">Name on card</label>
+                                    <label htmlFor="cc-name" className="form-label">Tên chủ thẻ</label>
                                     <input type="text" className="form-control" id="cc-name" placeholder=""
                                            required=""/>
-                                    <small className="text-muted">Full name as displayed on card</small>
+                                    <small className="text-muted">Tên đầy đủ như hiển thị trên thẻ</small>
                                     <div className="invalid-feedback">
-                                        Name on card is required
+                                        Tên trên thẻ là bắt buộc
                                     </div>
                                 </div>
-
                                 <div className="col-md-6">
-                                    <label htmlFor="cc-number" className="form-label">Credit card number</label>
+                                    <label htmlFor="cc-number" className="form-label">Số thẻ</label>
                                     <input type="text" className="form-control" id="cc-number" placeholder=""
                                            required=""/>
                                     <div className="invalid-feedback">
-                                        Credit card number is required
+                                        Số thẻ là bắt buộc
                                     </div>
                                 </div>
-
                                 <div className="col-md-3">
-                                    <label htmlFor="cc-expiration" className="form-label">Expiration</label>
+                                    <label htmlFor="cc-expiration" className="form-label">Ngày hến hạn</label>
                                     <input type="text" className="form-control" id="cc-expiration" placeholder=""
                                            required=""/>
                                     <div className="invalid-feedback">
-                                        Expiration date required
-                                    </div>
-                                </div>
-
-                                <div className="col-md-3">
-                                    <label htmlFor="cc-cvv" className="form-label">CVV</label>
-                                    <input type="text" className="form-control" id="cc-cvv" placeholder="" required=""/>
-                                    <div className="invalid-feedback">
-                                        Security code required
+                                        Yêu cầu ngày hết hạn
                                     </div>
                                 </div>
                             </div>
-
                             <hr className="my-4"/>
-
-                            <button className="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                            <button className="w-100 btn btn-primary btn-lg" type="submit">Tiếp tục thanh toán</button>
                         </form>
                     </div>
                 </div>

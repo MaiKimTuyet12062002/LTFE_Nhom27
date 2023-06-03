@@ -46,47 +46,36 @@ function Products() {
     }
 
     const ShowProducts = () => {
-        return (<>
-            <div style={{ position: "absolute", top: "60%", left: "40%" }}>
-                <Search onSearch={handleSearch} />
-            </div>
 
-
-            <div className="buttons d-flex justify-content-center mb-5 pb-5" >
-
-                <button className="btn btn-outline-dark me-2" onClick={() => setFilter(data)}> Tất cả sản phẩm
-                </button>
-                <button className="btn btn-outline-dark me-2"
-                        onClick={() => filterProduct("Giấy In ấn - Photo")}> Giấy In ấn - Photo
-                </button>
-                <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Bìa - Kệ - Rổ")}> Bìa -
-                    Kệ - Rổ
-                </button>
-                <button className="btn btn-outline-dark me-2"
-                        onClick={() => filterProduct("Sổ - Tập - Bao thư")}> Sổ - Tập - Bao thư
-                </button>
-                <button className="btn btn-outline-dark me-2"
-                        onClick={() => filterProduct("Băng keo - Dao - Kéo")}> Băng keo - Dao - Kéo
-                </button>
-                <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Bút - Mực")}> Bút -
-                    Mực
-                </button>
-                <button className="btn btn-outline-dark me-2"
-                        onClick={() => filterProduct(" Dụng cụ văn phòng")}> Dụng cụ văn phòng
-                </button>
-                <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Máy tính Casio")}> Máy
-                    tính Casio
-                </button>
-            </div>
-            {filter.map((product) => {
-                return (<div className="col-md-3 h-100 text-center py-4" key={product.id}>
-                    <div class="card">
-                        <div class="image">
-                            <img
-                                src={product.image}
-                                class="card-img-top"
-                                alt={product.name}
-                            />
+        return (
+            <>
+                <div className="buttons d-flex justify-content-center mb-5 pb-5">
+                    <button className="btn btn-outline-dark me-2" onClick={() => setFilter(data)}> Tất cả sản phẩm</button>
+                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Giấy In ấn - Photo")}> Giấy In ấn - Photo</button>
+                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Bìa - Kệ - Rổ")}> Bìa - Kệ - Rổ</button>
+                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Sổ - Tập - Bao thư")}> Sổ - Tập - Bao thư</button>
+                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Băng keo - Dao - Kéo")}> Băng keo - Dao - Kéo</button>
+                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Bút - Mực")}> Bút - Mực</button>
+                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct(" Dụng cụ văn phòng")}> Dụng cụ văn phòng</button>
+                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Máy tính Casio")}> Máy tính Casio</button>
+                </div>
+                {filter.map((product) => {
+                    return (
+                        <div className="col-md-3 h-100 text-center py-4" key={product.id}>
+                            <div class="cards">
+                                <div class="images">
+                                <img
+                                    src={product.image}
+                                    class="card-img-top"
+                                    alt={product.name}
+                                />
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">{product.name}</h5>
+                                    <p class="card-text text-center">{product.price}đ</p>
+                                    <NavLink to={`/products/${product.id}`} class="btn btn-outline-primary">Xem ngay</NavLink>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">{product.name}</h5>
