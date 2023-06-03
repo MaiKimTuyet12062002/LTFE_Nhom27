@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 import CartBtn from "./buttons/CartBtn";
+import Cart from "./Cart";
 
 export default function Navbar() {
     return (
