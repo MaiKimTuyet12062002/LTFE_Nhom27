@@ -1,15 +1,23 @@
 import React, {useEffect, useState} from "react";
-import ProductsData from "../data/ProductData.js";
 import Skeleton from "react-loading-skeleton";
 import {NavLink, useLocation} from "react-router-dom";
 import "./css/home.css"
 import Search from "./Search";
+import ProductData from "../data/ProductData.js";
 
 function Products() {
-    const [data, setData] = useState(ProductsData);
+    const [data, setData] = useState(ProductData);
     const [filter, setFilter] = useState(data);
     const [loading, setLoading] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
+    useEffect(() => {
+        // Simulating an API call to fetch product data
+        setTimeout(() => {
+            setData(ProductData);
+            setFilter(ProductData);
+            setLoading(false);
+        }, 2000);
+    }, []);
 
     useEffect(() => {
         if (searchQuery) {
@@ -42,13 +50,11 @@ function Products() {
 
         setFilter(updatedList);
     }
-
     const ShowProducts = () => {
         return (<>
             <div style={{position: "absolute", top: "60%", left: "40%"}}>
                 <Search onSearch={handleSearch}/>
             </div>
-
             <div className="buttons d-flex justify-content-center mb-5 pb-5">
                 <button className="btn btn-outline-dark me-2" onClick={() => setFilter(data)}> Tất cả sản phẩm</button>
                 <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Giấy In ấn - Photo")}> Giấy In ấn - Photo</button>
@@ -56,7 +62,7 @@ function Products() {
                 <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Sổ - Tập - Bao thư")}> Sổ - Tập - Bao thư</button>
                 <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Băng keo - Dao - Kéo")}> Băng keo - Dao - Kéo</button>
                 <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Bút - Mực")}> Bút - Mực</button>
-                <button className="btn btn-outline-dark me-2" onClick={() => filterProduct(" Dụng cụ văn phòng")}> Dụng cụ văn phòng</button>
+                <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Dụng cụ văn phòng")}> Dụng cụ văn phòng</button>
                 <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Máy tính Casio")}> Máy tính Casio</button>
             </div>
             {filter.map((product) => {
@@ -91,6 +97,7 @@ function Products() {
                     <hr/>
                 </div>
             </div>
+
             <div className="row justify-content-center">
                 {loading ? <Loading/> : <ShowProducts/>}
             </div>
