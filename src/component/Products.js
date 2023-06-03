@@ -68,7 +68,7 @@ function Products() {
             {filter.map((product) => {
                 return (<div className="col-md-3 h-100 text-center py-4" key={product.id}>
                     <div class="card">
-                        <div class="image">
+                        <div class="images">
                             <img
                                 src={product.image}
                                 class="card-img-top"
