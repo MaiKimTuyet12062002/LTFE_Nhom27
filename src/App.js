@@ -11,6 +11,7 @@ import Checkout from "./component/Checkout";
 import Cart from "./component/Cart";
 import ProductDetail from "./component/ProductDetail";
 import React from "react";
+import Search from "./component/Search";
 
 function App() {
     return (
