@@ -35,11 +35,11 @@ html{
     transform: scale(0.8);
 }
 
-.card-img-top{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+/*img{*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    object-fit: cover;*/
+/*}*/
 
 .card-body{
     background: #fff;
@@ -52,7 +52,7 @@ html{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-p{
+.card-body p{
     color: red;
     font-size: 20px;
     font-weight: bold;
