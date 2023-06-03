@@ -1,9 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import {delItem} from '../redux/actions/index'
 import { NavLink } from 'react-router-dom'
-
+import {delItem} from "./redux/actions";
 
 const Cart = () => {
     const state = useSelector((state)=> state.addItem)
@@ -36,7 +35,7 @@ const Cart = () => {
             <div className="px-4 my-5 bg-light rounded-3 py-5">
                 <div className="container py-4">
                     <div className="row">
-                        <h3>Your Cart is Empty</h3>
+                        <h3>Giỏ hàng của bạn trống</h3>
                     </div>
                 </div>
             </div>
@@ -47,7 +46,7 @@ const Cart = () => {
         return(
             <div className="container">
                 <div className="row">
-                    <NavLink to="/checkout" className="btn btn-outline-primary mb-5 w-25 mx-auto">Proceed To checkout</NavLink>
+                    <NavLink to="/checkout" className="btn btn-outline-primary mb-5 w-25 mx-auto">Tiến hành thanh toán</NavLink>
                 </div>
             </div>
         );
