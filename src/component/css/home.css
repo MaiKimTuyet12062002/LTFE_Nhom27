@@ -96,26 +96,66 @@ html {
     text-align: center;
     border: 1px solid #ececec;
 }
+
 /*Search.js*/
 .search {
     text-align: center;
     height: 50px;
     font-size: 20px;
 }
-.search button{
+
+.search button {
     width: 35px;
     height: 35px;
     background: white;
     color: black;
     cursor: pointer;
 }
-.search button:hover{
+
+.search button:hover {
     background: whitesmoke;
 }
+
 .search button svg {
     color: red;
 }
-/*ProductDetail.js*/
-.row img{
 
+/*ProductDetail.js*/
+.card-img-top{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s; /* Animation */
+}
+.card-img-top:hover {
+    transform: scale(0.75);
+}
+/*Home.js*/
+.hero .card-img-1{
+    display: flex;
+    position: relative;
+
+}
+
+.hero .card-img-2{
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.hero .card-img-3{
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.hero .card-img-4{
+    position: absolute;
+    top: 0; left: 0;
+}
+.hero .card-img-5{
+    position: absolute;
+    top: 0; left: 0;
+}
+.hero .border-0 img{
+    cursor: pointer;
+    width: 1465px;
 }

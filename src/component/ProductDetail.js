@@ -33,7 +33,7 @@ const ProductDetail = () => {
             <div className="container my-5 py-3">
                 <div className="row">
                     <div className="col-md-6 d-flex justify-content-center mx-auto product">
-                        <img src={product.image} alt={product.name}height="400px" />
+                        <img className="card-img-top" src={product.image} height="200px" />
                     </div>
                     <div className="col-md-6 d-flex flex-column justify-content-center">
                         <h1 className="display-5 fw-bold">{product.name}</h1>
