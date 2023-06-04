@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import productData from "../data/ProductData";
 import {addItem, delItem} from "./redux/actions";
+import "./css/home.css"
 
 const ProductDetail = () => {
     const [cartBtn, setCartBtn] = useState("Thêm vào giỏ hàng")

@@ -52,7 +52,7 @@ function Products() {
     }
     const ShowProducts = () => {
         return (<>
-            <div style={{position: "absolute", top: "60%", left: "40%"}}>
+            <div>
                 <Search onSearch={handleSearch}/>
             </div>
             <div className="buttons d-flex justify-content-center mb-5 pb-5">
@@ -78,8 +78,8 @@ function Products() {
                         <div class="card-body">
                             <h5 class="card-title">{product.name}</h5>
                             <p class="card-text text-center">{product.price}đ</p>
-                            <NavLink to={`/products/${product.id}`} class="btn btn-outline-primary">Xem
-                                ngay</NavLink>
+                            <NavLink to={`/products/${product.id}`} class="btn btn-outline-primary"><button>Xem
+                                ngay</button></NavLink>
                         </div>
                     </div>
                 </div>);
