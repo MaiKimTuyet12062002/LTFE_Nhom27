@@ -39,6 +39,24 @@ const ProductDetail = () => {
                         <hr />
                         <h2 className="my-4">{product.price}đ</h2>
                         <p className="lead">{product.des}</p>
+                        <h6>Số Lượng</h6>
+                        <div className="buy-amount">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     stroke-width="2"
+                                     stroke="currentColor" className="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"/>
+                                </svg>
+                            </button>
+                            <input type="text" name="amount" id="amount"/>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     stroke-width="2"
+                                     stroke="currentColor" className="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                                </svg>
+                            </button>
+                        </div>
                         <button onClick={()=>handleCart(product)} className="btn btn-outline-primary my-5">{cartBtn}</button>
                     </div>
                 </div>
