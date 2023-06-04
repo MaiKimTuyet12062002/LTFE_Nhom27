@@ -35,12 +35,6 @@ html{
     transform: scale(0.8);
 }
 
-/*img{*/
-/*    height: 100%;*/
-/*    width: 100%;*/
-/*    object-fit: cover;*/
-/*}*/
-
 .card-body{
     background: #fff;
     padding: 10px;
@@ -56,4 +50,29 @@ html{
     color: red;
     font-size: 20px;
     font-weight: bold;
+}
+/*Cart.js*/
+.buy-amount{
+    display: flex;
+}
+.buy-amount button{
+    width: 35px;
+    height: 35px;
+    outline: none;
+    background: none;
+    border: 1px solid #ececec;
+}
+.buy-amount button:hover{
+    background-color: #ececec;
+}
+.buy-amount button svg{
+    color: #909090;
+}
+.buy-amount button svg{
+    color: #4f4f4f;
+}
+.buy-amount #amount{
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ececec;
 }

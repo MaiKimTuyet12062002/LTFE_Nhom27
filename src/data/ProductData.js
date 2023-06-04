@@ -141,7 +141,7 @@ const products= [
     },
     {
         id: 18,
-        name: "BGiấy A4 Double A 80 Gsm",
+        name: "Giấy A4 Double A 80 Gsm",
         category: "Giấy In ấn - Photo",
         image: "https://cdn.fast.vn/tmp/20200718201248-6.jpg",
         des: "Giao hàng miễn phí (nếu cách Viettel Store dưới 10km). Bảo hành chính hãng",
