@@ -131,31 +131,8 @@ html {
     transform: scale(0.75);
 }
 /*Home.js*/
-.hero .card-img-1{
+.hero .card-img{
     display: flex;
     position: relative;
 
-}
-
-.hero .card-img-2{
-    position: absolute;
-    top: 0; left: 0;
-}
-
-.hero .card-img-3{
-    position: absolute;
-    top: 0; left: 0;
-}
-
-.hero .card-img-4{
-    position: absolute;
-    top: 0; left: 0;
-}
-.hero .card-img-5{
-    position: absolute;
-    top: 0; left: 0;
-}
-.hero .border-0 img{
-    cursor: pointer;
-    width: 1465px;
 }
