@@ -10,6 +10,31 @@ const Cart = () => {
     const handleClose = (item) => {
         dispatch(delItem(item))
     }
+    //tăng giảm số lượng
+    let amountElement = document.getElementById('amount');
+    let amount = amountElement.value
+    let render = (amount) => {
+        amountElement.value = amount
+    }
+    //Handle Plus
+    let handlePlus = () => {
+        amount++
+        console.log(amount)
+        render(amount);
+    }
+    //Handle Minus
+    let handleMinus = () => {
+        if (amount > 1)
+            amount--
+        console.log(amount)
+        render(amount);
+    }
+    amountElement.addEventListener('input', () => {
+        amount = amountElement.value
+        amount = parseInt(amount);
+        amount = (isNaN(amount) || amount === 0) ? 1 : amount;
+        render(amount);
+    })
 
     const cartItems = (cartItem) => {
         return(
@@ -25,7 +50,7 @@ const Cart = () => {
                             <p className="lead fw-bold">{cartItem.price}đ</p>
                             <h6>Số Lượng</h6>
                             <div className="buy-amount">
-                                <button>
+                                <button class="minus-btn" onClick={() => handleMinus(amount)}>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                          stroke-width="2"
                                          stroke="currentColor" className="w-6 h-6">
@@ -33,7 +58,7 @@ const Cart = () => {
                                     </svg>
                                 </button>
                                 <input type="text" name="amount" id="amount" value="1"/>
-                                <button>
+                                <button class="plus-btn" onClick={() => handlePlus(amount)}>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                          stroke-width="2"
                                          stroke="currentColor" className="w-6 h-6">
