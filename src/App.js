@@ -11,7 +11,8 @@ import Checkout from "./component/Checkout";
 import Cart from "./component/Cart";
 import ProductDetail from "./component/ProductDetail";
 import React from "react";
-import Search from "./component/Search";
+import ForgotPass from "./component/buttons/ForgotPass";
+
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                 <Route exact path="/register" element={<Signup/>}/>
                 <Route exact path="/cart" element={<Cart/>} />
                 <Route exact path="/checkout" element={<Checkout/>}/>
+                <Route exact path="/forgotpass" element={<ForgotPass/>}/>
             </Routes>
         </Router>
     );
