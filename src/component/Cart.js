@@ -1,78 +1,78 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
-import { useDispatch } from 'react-redux'
-import { NavLink } from 'react-router-dom'
-import {delItem} from "./redux/actions";
+import {useSelector} from 'react-redux'
+import {useDispatch} from 'react-redux'
+import {NavLink} from 'react-router-dom'
+import {delItem, addItem, decItem} from "./redux/actions";
 
-const Cart = () => {
-    const state = useSelector((state)=> state.addItem)
-    const dispatch = useDispatch()
+//Chuyển hàm cartItems thành một function component riêng biệt
+function CartItem({cartItem}) {
+    const dispatch = useDispatch();
     const handleClose = (item) => {
         dispatch(delItem(item))
-    }
-    //tăng giảm số lượng
-    let amountElement = document.getElementById('amount');
-    let amount = amountElement.value
-    let render = (amount) => {
-        amountElement.value = amount
-    }
-    //Handle Plus
-    let handlePlus = () => {
-        amount++
-        console.log(amount)
-        render(amount);
-    }
-    //Handle Minus
-    let handleMinus = () => {
-        if (amount > 1)
-            amount--
-        console.log(amount)
-        render(amount);
-    }
-    amountElement.addEventListener('input', () => {
-        amount = amountElement.value
-        amount = parseInt(amount);
-        amount = (isNaN(amount) || amount === 0) ? 1 : amount;
-        render(amount);
-    })
+    };
+    const handlePlus = (item) => {
+        dispatch(addItem(item));
+    };
+    const handleDec = (item) => {
+        dispatch(decItem(item));
+    };
 
-    const cartItems = (cartItem) => {
-        return(
-            <div className="px-4 my-5 bg-light rounded-3" key={cartItem.id}>
-                <div className="container py-4">
-                    <button onClick={()=>handleClose(cartItem)} className="btn-close float-end" aria-label="Close"></button>
-                    <div className="row justify-content-center">
-                        <div className="col-md-4">
-                            <img src={cartItem.image} alt={cartItem.name} height="200px" width="180px" />
-                        </div>
-                        <div className="col-md-4">
-                            <h3>{cartItem.name}</h3>
-                            <p className="lead fw-bold">{cartItem.price}đ</p>
-                            <h6>Số Lượng</h6>
-                            <div className="buy-amount">
-                                <button class="minus-btn" onClick={() => handleMinus(amount)}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                         stroke-width="2"
-                                         stroke="currentColor" className="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"/>
-                                    </svg>
-                                </button>
-                                <input type="text" name="amount" id="amount" value="1"/>
-                                <button class="plus-btn" onClick={() => handlePlus(amount)}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                         stroke-width="2"
-                                         stroke="currentColor" className="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                              d="M12 4.5v15m7.5-7.5h-15"/>
-                                    </svg>
-                                </button>
-                            </div>
+    //Sử dụng useState để lưu trữ số lượng cho từng sản phẩm
+    const [quantity, setQuantity] = React.useState(cartItem.quantity || 1);
+
+    //Cập nhật biến trạng thái khi nhấn nút cộng hoặc trừ
+    const handleIncrease = () => {
+        setQuantity(quantity + 1);
+        handlePlus(cartItem);
+    };
+    const handleDecrease = () => {
+        if (quantity > 1) {
+            setQuantity(quantity - 1);
+            handleDec(cartItem);
+        }
+    };
+    return (
+        <div className="px-4 my-5 bg-light rounded-3" key={cartItem.id}>
+            <div className="container py-4">
+                <button onClick={() => handleClose(cartItem)} className="btn-close float-end"
+                        aria-label="Close"></button>
+                <div className="row justify-content-center">
+                    <div className="col-md-4">
+                        <img src={cartItem.image} alt={cartItem.name} height="200px" width="180px"/>
+                    </div>
+                    <div className="col-md-4">
+                        <h3>{cartItem.name}</h3>
+                        <p className="lead fw-bold">{cartItem.price}đ</p>
+                        <h6>Số Lượng</h6>
+                        <div className="buy-amount">
+                            <button className="minus-btn" onClick={handleDecrease}>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     stroke-width="2"
+                                     stroke="currentColor" className="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"/>
+                                </svg>
+                            </button>
+                            {/*Sử dụng biến trạng thái để hiển thị số lượng*/}
+                            <input type="text" name="total-quantity" id={`total-quantity-${cartItem.id}`}
+                                   value={quantity} readOnly/>
+                            <button className="plus-btn" onClick={handleIncrease}>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     stroke-width="2"
+                                     stroke="currentColor" className="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                          d="M12 4.5v15m7.5-7.5h-15"/>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
+}
+
+const Cart = () => {
+    const state = useSelector((state) => state.addItem);
 
     const emptyCart = () => {
         return (
@@ -87,19 +87,29 @@ const Cart = () => {
     }
 
     const button = () => {
-        return(
+        return (
             <div className="container">
                 <div className="row">
-                    <NavLink to="/checkout" className="btn btn-outline-primary mb-5 w-25 mx-auto">Tiến hành thanh toán</NavLink>
+                    <NavLink to="/checkout" className="btn btn-outline-primary mb-5 w-25 mx-auto">Tiến hành thanh
+                        toán</NavLink>
                 </div>
             </div>
         );
-    }
+    };
 
     return (
         <>
             {state.length === 0 && emptyCart()}
-            {state.length !== 0 && state.map(cartItems)}
+            {state.length !== 0 && state.reduce((uniqueItems, cartItem) => {
+                const isDuplicate = uniqueItems.some((item) => item.id === cartItem.id);
+                if (!isDuplicate) {
+                    uniqueItems.push(cartItem);
+                }
+                return uniqueItems;
+            }, []).map(cartItem => (
+                //Sử dụng function component CartItem để hiển thị từng sản phẩm
+                <CartItem key={cartItem.id} cartItem={cartItem}/>
+            ))}
             {state.length !== 0 && button()}
         </>
     )
