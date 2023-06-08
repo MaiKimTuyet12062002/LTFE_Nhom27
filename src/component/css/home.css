@@ -91,7 +91,7 @@ html {
     color: #4f4f4f;
 }
 
-.buy-amount #amount {
+.buy-amount input {
     width: 40px;
     text-align: center;
     border: 1px solid #ececec;
@@ -139,7 +139,7 @@ html {
 .form-gap {
     padding-top: 70px;
 }
-/*css forgptpass*/
+/*css forgotpass*/
 .col-md-4.col-md-offset-4 {
     position: absolute;
     top: 50%;

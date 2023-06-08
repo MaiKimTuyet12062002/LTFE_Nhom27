@@ -11,3 +11,10 @@ export const delItem = (product) => {
         payload : product
     }
 }
+
+export const decItem=(product)=>{
+    return{
+        type: "DEC_ITEM",
+        payload:product
+    }
+}
