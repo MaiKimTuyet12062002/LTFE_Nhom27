@@ -2,6 +2,7 @@ import React, {Component, useState} from 'react';
 import {
     MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBIcon, MDBCheckbox
 } from 'mdb-react-ui-kit';
+import {NavLink} from "react-router-dom";
 
 function Login() {
     const [email, setEmail] = useState('');
@@ -54,7 +55,9 @@ function Login() {
                     <div className="d-flex justify-content-between mx-4 mb-4">
                         <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Nhớ mật khẩu'
                                      onChange={handleRememberMeChange}/>
-                        <a href="!#">Quên mật khẩu?</a>
+                        <NavLink className="nav-link" to="/forgotpass">
+                            Quên mật khẩu?
+                        </NavLink>
                     </div>
                     <MDBBtn className="mb-4 w-100" size="lg" onClick={handleLogin}>Đăng nhập</MDBBtn>
                     <div className=" align-items-center my-4">

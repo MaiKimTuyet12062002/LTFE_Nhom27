@@ -1,9 +1,9 @@
 import React from "react";
-import "./css/home.css";
+import "../css/home.css";
 
-function ForgotPass() {
+const ForgotPass = () => {
     return (
-        <div className="col-md-4 col-md-offset-4">
+        <div className="col-md-4 col-md-offset-4 ">
             <div className="panel panel-default">
                 <div className="panel-body">
                     <div className="text-center">
