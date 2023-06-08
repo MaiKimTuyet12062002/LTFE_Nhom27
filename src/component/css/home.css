@@ -134,5 +134,8 @@ html {
 .hero .card-img{
     display: flex;
     position: relative;
-
+}
+/*ForgotPass.js*/
+.form-gap {
+    padding-top: 70px;
 }
