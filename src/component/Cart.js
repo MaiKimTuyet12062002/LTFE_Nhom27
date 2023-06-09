@@ -1,12 +1,33 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {useSelector} from 'react-redux'
 import {useDispatch} from 'react-redux'
 import {NavLink} from 'react-router-dom'
-import {delItem, addItem, decItem} from "./redux/actions";
+import {delItem, addItem, decItem, setCartItems} from "./redux/actions";
 
 //Chuyển hàm cartItems thành một function component riêng biệt
 function CartItem({cartItem}) {
     const dispatch = useDispatch();
+
+    // Truy cập trạng thái giỏ hàng từ Redux store
+    const state = useSelector((state) => state.addItem);
+
+    // Tải dữ liệu giỏ hàng từ local storage khi tải lại trang
+    useEffect(() => {
+        const cartData = localStorage.getItem('cart');
+        if (cartData) {
+            const parsedData = JSON.parse(cartData);
+            // Dispatch an action to update the cart state with the data from local storage
+            // Make sure you have the necessary reducer and action creators set up for this
+            dispatch(setCartItems(parsedData));
+        }
+    }, [dispatch]);
+
+    // Cập nhật dữ liệu giỏ hàng trong local storage khi trạng thái thay đổi
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(state));
+    }, [state]);
+
+
     const handleClose = (item) => {
         dispatch(delItem(item))
     };
