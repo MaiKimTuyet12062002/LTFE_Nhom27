@@ -60,6 +60,9 @@ function Login() {
                         </NavLink>
                     </div>
                     <MDBBtn className="mb-4 w-100" size="lg" onClick={handleLogin}>Đăng nhập</MDBBtn>
+                    <div className="container signin" style={{textAlign: 'center'}}>
+                        <p style={{color: 'black'}}>Bạn chưa có tài khoản?<NavLink to="/register"> Đăng ký</NavLink></p>
+                    </div>
                     <div className=" align-items-center my-4">
                         <p className="text-center fw-bold mx-3 mb-0">hoặc</p>
                     </div>

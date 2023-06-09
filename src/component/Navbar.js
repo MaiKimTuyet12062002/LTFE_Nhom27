@@ -1,15 +1,17 @@
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 import CartBtn from "./buttons/CartBtn";
+import "./css/home.css"
 
 export default function Navbar() {
     return (
-
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
                 <div className="container">
                     <NavLink className="navbar-brand fw-bold fs-4" to="/">
                         <img
+                            style={{borderRadius: 50}}
+                            className="logo1"
                             alt="logo"
                             src="/assets/Logo/logo.png"
                             height="80px"

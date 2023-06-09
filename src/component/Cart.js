@@ -3,6 +3,7 @@ import {useSelector} from 'react-redux'
 import {useDispatch} from 'react-redux'
 import {NavLink} from 'react-router-dom'
 import {delItem, addItem, decItem, setCartItems} from "./redux/actions";
+import "./css/home.css"
 
 //Chuyển hàm cartItems thành một function component riêng biệt
 function CartItem({cartItem}) {
