@@ -1,11 +1,16 @@
-.about {
-    padding: 0;
-    margin: 0;
-    height: 700px;
-    font-family: Arial, sans-serif;
-    background-image: url("/public/assets/about.jpg");
-    height: 1200px;
+/*.about {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    height: 700px;*/
+/*    font-family: Arial, sans-serif;*/
+/*    !*background-image: url("/public/assets/about.jpg");*!*/
+/*    height: 1200px;*/
 
+/*}*/
+
+.root {
+    margin: auto;
+    padding: 0;
 }
 
 h1 {
@@ -18,19 +23,41 @@ h1 {
     height: auto;
 }
 
-p {
-    text-align: justify;
-    line-height: 1.5;
-    /* color: rgb(244, 9, 9); */
-    margin-top: 40px;
-    margin-bottom: 1rem;
-    padding-left: 65px;
-    padding-right: 80px;
+.about {
+    position: relative; /* Để phần tử con có vị trí tuyệt đối đối với phần tử cha */
 }
+
+.image {
+    width: 100%; /* Hiển thị ảnh với chiều rộng tối đa */
+}
+
 .l1 {
-    color: #2c1d0a;
+    position: absolute; /* Định vị phẩn tử */
+    top: 50px; /* Vị trí đỉnh của phần tử so với phần tử cha */
+    left: 50px; /* Vị trí trái của phần tử so với phần tử cha */
+    right: 50px;
+    background-color: rgba(173, 171, 171, 0.5); /* Độ trong suốt của phần tử */
+    padding: 20px; /* Khoảng cách giữa nội dung và phần tử */
+    z-index: 1; /* Hiển thị phần tử trên phần tử cha */
+    /*max-width: 400px; !* Chiều rộng tối đa của phần tử con *!*/
 }
-.about div {
-    padding: 130px;
-    margin: -25px 190px 0 0px;
+p{
+    align-content: center;
+    color: white;
 }
+/*p {*/
+/*    text-align: justify;*/
+/*    line-height: 1.5;*/
+/*    !* color: rgb(244, 9, 9); *!*/
+/*    margin-top: 40px;*/
+/*    margin-bottom: 1rem;*/
+/*    padding-left: 65px;*/
+/*    padding-right: 80px;*/
+/*}*/
+/*.l1 {*/
+/*    color: #2c1d0a;*/
+/*}*/
+/*.about div {*/
+/*    padding: 130px;*/
+/*    margin: -25px 190px 0 0px;*/
+/*}*/
