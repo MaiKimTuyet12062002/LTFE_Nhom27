@@ -143,7 +143,7 @@ html {
 .form-gap {
     padding-top: 70px;
 }
-/*forgotpass.js*/
+/*ForgotPass.js*/
 .col-md-4.col-md-offset-4 {
     position: absolute;
     top: 50%;
@@ -154,4 +154,19 @@ html {
 /*Navbar.js*/
 img .logo1{
     border-radius: 50%;
+}
+
+/*Footer.js*/
+.footer .content p{
+    color: black;
+}
+.footer .content{
+    color: black;
+}
+.footer .content h6{
+    font-size: 20px;
+}
+
+.container .footer{
+    background-color: #ffffff;
 }

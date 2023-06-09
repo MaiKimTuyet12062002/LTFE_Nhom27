@@ -12,6 +12,7 @@ import Cart from "./component/Cart";
 import ProductDetail from "./component/ProductDetail";
 import React from "react";
 import ForgotPass from "./component/buttons/ForgotPass";
+import Footer from "./component/Footer";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
                 <Route exact path="/checkout" element={<Checkout/>}/>
                 <Route exact path="/forgotpass" element={<ForgotPass/>}/>
             </Routes>
+            <Footer/>
         </Router>
     );
 }
