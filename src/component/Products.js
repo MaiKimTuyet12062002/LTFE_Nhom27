@@ -97,7 +97,6 @@ function Products() {
                     <hr/>
                 </div>
             </div>
-
             <div className="row justify-content-center">
                 {loading ? <Loading/> : <ShowProducts/>}
             </div>
