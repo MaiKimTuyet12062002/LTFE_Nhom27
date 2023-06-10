@@ -29,9 +29,9 @@ function About() {
                         tôi mở cửa từ 8h sáng đến 8h tối mỗi ngày.
                     </p>
                     <p>
-                        Địa chỉ: Số 123 Đường ABC,
-                        Quận XYZ, Thành phố Hồ Chí Minh. Số điện thoại: 0123456789. Email:
-                        abcvpp@gmail.com. Website: www.abcvpp.com.vn.
+                        Địa chỉ: ĐH Nông Lâm TP.HCM,
+                        Tp.Thủ Đức, Thành phố Hồ Chí Minh. Số điện thoại: 0763154879. Email:
+                        tuyetthi@gmail.com. Website: www.abcvpp.com.vn.
                     </p>
                 </div>
             </div>
