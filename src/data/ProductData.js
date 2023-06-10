@@ -31,7 +31,7 @@ const products= [
         image: "https://cdn.fast.vn/tmp/20200718201248-6.jpg",
         des: "Giao hàng miễn phí (nếu cách Viettel Store dưới 10km). Bảo hành chính hãng",
         price: 79000
-    }  ,
+    },
     {
         id: 4,
         name: "Bút dạ quang ERAS E175",
@@ -298,7 +298,7 @@ const products= [
         id: 27,
         name: "Băng keo đục 5F - 100Y",
         category: "Băng keo - Dao - Kéo",
-        image: "https://cdn.fast.vn/tmp/20220825153643-capture.PNG",
+        image: "https://cdn.fast.vn/tmp/20200719122226-2-1-.jpg",
         des: "Công dụng : Băng keo 5cm - 100 yard là loại keo trong 1 mặt nên khi dán nội dung không bị che khuất. Sản phẩm được sản xuất từ chất liệu OPP chống thấm tốt và độ dính cao, không rách. Thiết kế keo bề rộng keo 5 cm, đóng cuộn nhỏ với chiều dài 100 yard tiện dùng cho việc dán đơn giản và không thường xuyên.\n" +
             "Đặc Điểm : Dính chặt trên bề mặt các loại giấy - Dính bề mặt kim loại, thủy tinh, nhựa, gốm... Sản phẩm có thiết kế nhỏ gọn, dễ bảo quản trong ngăn kéo, đặc biệt chuyên dùng cho các công việc văn phòng và cắt dán thủ công.",
         price: 7500
@@ -429,6 +429,212 @@ const products= [
         image: "https://cdn.fast.vn/tmp/20200702152447-2.PNG",
         des: "Kích thước (Sâu × Rộng × Cao) : 175,5×110,5×25mm",
         price: 215000
+    },
+    {
+        id: 41,
+        name: "Giấy A4 Excel 70 Gsm",
+        category: "Giấy In ấn - Photo",
+        image: "https://cdn.fast.vn/tmp/20220727082028-70-a4.PNG",
+        des: "Giấy A4 là ngày càng được sử dụng nhiều trong thời đại thông tin hiện nay bởi nhiều công dụng. Ngày nay có quá nhiều thương hiệu giấy ra đời khiến bạn khó khăn không biết nên dùng loại nào ư? Nếu bạn chưa tìm được dòng giấy nào phù hợp, hãy tham khảo dòng giấy A4 Excel định lượng 70gsm với chất lượng và giá cả ổn định.",
+        price: 46000
+    },
+    {
+        id: 42,
+        name: "Giấy in BILL tính tiền 8F - K80x80 (50 cuộn / Thùng)",
+        category: "Giấy In ấn - Photo",
+        image: "https://cdn.fast.vn/tmp/20220625161001-k80x80.PNG",
+        des: "CHI TIẾT SẢN PHẨM\n" +
+            "Phân Loại:\n" +
+            "+ K80x45mm                                       + K57x45mm\n" +
+            "- Chiều cao: 80mm                              - Chiều cao: 57mm\n" +
+            "- Đường kính: 45mm                           - Đường kính : 45mm\n" +
+            "\n" +
+            "+ K57x38mm                                        + K57x30mm\n" +
+            "- Chiều cao: 57mm                               - Chiều cao : 57mm\n" +
+            "- Đường kính: 38mm                            - Đường kính : 30mm",
+        price: 775000
+    },
+    {
+        id: 43,
+        name: "Giấy Note Please Sign Pronoti (20x48mm)",
+        category: "Giấy In ấn - Photo",
+        image: "https://cdn.fast.vn/tmp/20200718161257-14.jpg",
+        des: "Đặc Điểm Sản phẩm có thể tháo dán và gỡ ra dễ dàng nhờ lớp keo mỏng. Chất lượng giấy đẹp, láng mịn, thấm mực tốt nhưng không bị lem, nhòe. Keo dính bền lâu nhưng dễ di dời. Ứng dụng công nghệ sản xuất hiện đại mang đến chất lượng giấy tiêu chuẩn và hoàn toàn thân thiện với người dùng. Loại giấy này có thiết kế nhỏ gọn, tiện lợi cho việc mang theo mọi lúc mọi nơi.",
+        price: 21000
+    },
+    {
+        id: 44,
+        name: "Giấy in BILL tính tiền 5F - K57x45 (100 cuộn / Thùng)",
+        category:"Giấy In ấn - Photo",
+        image: "https://cdn.fast.vn/tmp/20220102135804-k57.PNG",
+        des: "Tên Sản Phẩm: Giấy in nhiệt, in hóa đơn\n" +
+            "\n" +
+            "Phân Loại: \n" +
+            "\n" +
+            "+ K57x45mm\n" +
+            "\n" +
+            "- Chiều cao: 57mm\n" +
+            "\n" +
+            "- Đường kính: 45mm ",
+        price: 430000
+    },
+    {
+        id: 45,
+        name: "Giấy A5 Double A 80 Gsm (Từ giấy A4 80gsm cắt làm đôi thành A5)",
+        category:"Giấy In ấn - Photo",
+        image: "https://cdn.fast.vn/tmp/20200718201748-11.jpg",
+        des: "Đặc điểm:\n" +
+            "\n" +
+            "                        Giấy A5 Double A: Loại giấy in cao cấp, trắng, đẹp,\n" +
+            "\n" +
+            "                        thích hợp với tất cả các loại Máy in phun, Máy in Laser,\n" +
+            "\n" +
+            "                        Máy Fax laser, Máy Photocopy. In đảo 2 mặt không lo kẹt giấy.\n" +
+            "\n" +
+            "                        Giấy được đóng gói và nhập khẩu từ Thailand",
+        price: 42000
+    },
+    {
+        id: 46,
+        name: "Bìa Accor Thiên Long không lỗ",
+        category: "Bìa - Kệ - Rổ",
+        image: "https://cdn.fast.vn/tmp/20200719214405-z1982652691871_471f529296706aec04893507f1f76693.jpg",
+        des: "Công dụng Kích thước nhỏ gọn, nhẹ\n" +
+            "Tiện lợi lưu trữ và bảo quản hồ sơ\n" +
+            "Đặc Điểm Được làm bằng nhựa PP đặc biệt chịu lực cao\n" +
+            "01 bìa có thể chứa được 50 tờ A4",
+        price: 5000
+    },
+    {
+        id: 47,
+        name: "Bìa Accor Thiên Long có lỗ",
+        category: "Bìa - Kệ - Rổ",
+        image: "https://cdn.fast.vn/tmp/20200719214305-z1982652742536_81506d11979e00d02e47539af05c732b.jpg",
+        des: "Công dụng Kích thước nhỏ gọn, nhẹ\n" +
+            "Tiện lợi lưu trữ và bảo quản hồ sơ\n" +
+            "Đặc Điểm Được làm bằng nhựa PP đặc biệt chịu lực cao\n" +
+            "01 bìa có thể chứa được 50 tờ A4",
+        price: 5000
+    },
+    {
+        id: 48,
+        name: "Sổ da CK7 dày (16 x 21 cm)",
+        category: "Sổ - Tập - Bao thư",
+        image: "https://cdn.fast.vn/tmp/20211105091414-so-da-ck7-day-16-21cm-02.jpg",
+        des: "Trong các món đồ dùng thiết yếu mà công ty thường sắm để cấp cho nhân viên hiện nay, không thể thiếu sự có mặt của các loại sổ hay vở ghi chép, hay các loại bao thư đẹp sử dụng trong các hoạt động của doanh nghiệp. Một số đơn vị để tạo thêm tính chuyên nghiệp còn in thêm logo để đối tác dễ nhận biết thương hiệu mình.",
+        price: 25000
+    },
+    {
+        id: 49,
+        name: "Băng keo simili xanh dương 3.6cm - 8 mét",
+        category: "Băng keo - Dao - Kéo",
+        image: "https://cdn.fast.vn/tmp/20200719124655-3-2-.jpg",
+        des: "Đặc điểm :\n" +
+            "\n" +
+            "Dùng để dán gáy sách\n" +
+            "Chất dính được làm từ cao su tự nhiên.\n" +
+            "Chống nước tốt.\n" +
+            "Dễ cắt. Có nhiều màu sắc để lựa chọn.",
+        price: 5000
+    },
+    {
+        id: 50,
+        name: "Băng keo xốp 4.8F",
+        category: "Băng keo - Dao - Kéo",
+        image: "https://cdn.fast.vn/image/data/bangkeo_dao_keo_thuoc/739921007_Bang-keo-2-mat--mousse-48mmx9Y-BKM-04.jpg",
+        des: "Đặc điểm :Băng keo 2 mặt có nhiều kích cỡ khác nhau với lớp keo mỏng nhưng dính chắc được bọc lót 1mặt giấy dễ dàng sử dụng và tiện lợi trong nhiều mục đích khác nhau.\n" +
+            "Đóng gói: 6 cuộn/ cây",
+        price: 18200
+    },
+    {
+        id: 51,
+        name: "Bút lông dầu Thiên Long PM04 xanh",
+        category: "Bút - Mực",
+        image: "https://cdn.fast.vn/tmp/20200703100903-25.PNG",
+        des: "Bút có thiết kế rất hợp lý, dễ sử dụng, chất lượng ổn định .Sản phẩm được sản xuất theo công nghệ hiện đại, đạt tiêu chuẩn chất lượng quốc tế, kiểu dáng được cải tiến ấn tượng , thân bút cầm chắc tay , dễ cầm nắm , không gây mỏi tay khi sử dụng.",
+        price: 7500
+    },
+    {
+        id: 52,
+        name: "Bút bi Vâng Thiên (bút nến)",
+        category: "Bút - Mực",
+        image: "https://cdn.fast.vn/tmp/20210217100930-vang-thien.JPG",
+        des: "Bút bi là sản phẩm quá đỗi thông dụng và ai cũng biết, cũng từng dùng qua. Bạn có thể bắt gặp chúng ở bất cứ đâu vì nhỏ gọn, bền, dễ sử dụng.",
+        price: 2100
+    },
+    {
+        id: 53,
+        name: "Bút bi dán bàn đôi Thiên Long FO-PH01 xanh",
+        category: "Bút - Mực",
+        image: "https://cdn.fast.vn/tmp/20210217150053-db4a105c53e0e42ce8f92011ae8d8ec0_fe71750e33d24824829f5a45b594cb10_master.jpg",
+        des: "Bút đế cắm Flexoffice FO-PH01. Bút chuyên để trên bàn làm việc nơi đông người, bàn tiếp tân,ngân hàng, siêu thị...Bút bền màu, đẹp, nét viết thanh, sắc nét, không lem mực, ít khi chảy mực.",
+        price: 13000
+    },
+    {
+        id: 54,
+        name: "Gôm đen Thiên Long E011",
+        category: "Bút - Mực",
+        image: "https://cdn.fast.vn/tmp/20230424130239-870_e_011_01.jpg",
+        des: "Gôm Đen E-011 với độ bền dẻo cao có khả năng tẩy sạch các vết chì đen mà không gây rách giấy, không làm bẩn, lem trên giấy trắng. Được làm từ chất liệu Polymer mềm, dẻo, không giòn gẫy hay khô cứng theo thời gian mà luôn giữ nguyên tính chất mềm mại, sẵn sàng cho bạn sử dụng.",
+        price: 3500
+    },
+    {
+        id: 55,
+        name: "Bút chì 2B G Star",
+        category: "Bút - Mực",
+        image: "https://cdn.fast.vn/image/data/new/55860b%C3%BAt%20ch%C3%AC%20g%E1%BB%97.jpg",
+        des: "Công dụng Được thiết kế nhỏ gọn, có kích thước nhỏ gọn, dễ dàng mang theo khi đi học hay đi làm mà không chiếm quá nhiều không gian diện tích. Bút cho bạn dễ dàng cầm nắm và điều chỉnh nét vẽ. Với tiêu chuẩn chất lượng an toàn, Bút Chì Gỗ là sự lựa chọn hoàn hảo để bạn vẽ, phác thảo hay viết.",
+        price: 1800
+    },
+    {
+        id: 56,
+        name: "Chuột máy tính có dây Genius",
+        category:"Máy tính Casio",
+        image: "https://cdn.fast.vn/image/data/7/77690chuot.jpg",
+        des: "Công dụng loại chuột plug-and-play cho phép người dùng kết nối với máy tính không cần cài đặt. Khi cần sử dụng, bạn chỉ cần cắm đầu USB vào thiết bị là chuột đã sẵn sàng cho công việc. Điều khiển con trỏ chính xác đến nơi bạn muốn để chỉnh sửa tài liệu, điều hướng trang web.",
+        price: 152000
+    },
+    {
+        id: 57,
+        name: "USB Kingston 32G",
+        category:"Máy tính Casio",
+        image: "https://cdn.fast.vn/image/data/new/2354032g.jpg",
+        des: "Công dụng có thiết kế độc đáo, được làm bằng nhựa cứng, đem tới sự sang trọng, bền bỉ cho thiết bị. Sản phẩm có cổng kết nối đáp ứng khả năng trao đổi dữ liệu qua lại giữa các thiết bị một cách nhanh chóng.",
+        price: 219800
+    },
+    {
+        id: 58,
+        name: "Bàn phím máy tính Genius ",
+        category:"Máy tính Casio",
+        image: "https://cdn.fast.vn/tmp/20210205142025-6.JPG",
+        des: "Bàn Phím Genius KB-101\n" +
+            "\n" +
+            "- Có Dây Cổng USB\n" +
+            "\n" +
+            " \n" +
+            "\n" +
+            "Thông tin sản phẩm:\n" +
+            "\n" +
+            "- Loại bàn phím thường - Kết nối USB 2.0 - Kích thước: 440.51 x 139.67 x 27.08 mm\n" +
+            "\n" +
+            "- Chiều dài dây: 1,5m",
+        price: 225000
+    },
+    {
+        id: 59,
+        name: "Miếng lót Chuột NHỎ 18x22cm",
+        category:"Máy tính Casio",
+        image: "https://cdn.fast.vn/image/data/01072019/64572a040b5bcdb403f1e6651.jpg",
+        des: "Công dụng Không chỉ thể hiện tính thời trang mà sản phẩm lót chuột quang này còn cho khả năng hỗ trợ chuột chuyên dụng nhạy bén và chính xác hơn.",
+        price: 17600
+    },
+    {
+        id: 60,
+        name: "Pin tiểu 3A Panasonic – vĩ 2 viên",
+        category:"Máy tính Casio",
+        image: "https://cdn.fast.vn/image/data/01072019/41012pin.jpg",
+        des: "Công dụng : Dùng cho các thiết bị cần năng lượng cao như: Máy chụp hình, máy nhắn tin, máy hát đĩa CD, trò chơi điện tử và các thiết bị y tế cầm tay, Radio, đồng hồ treo tường, Walkman, Flash chụp hình, đèn pin, remote, ..",
+        price: 10000
     },
 
 

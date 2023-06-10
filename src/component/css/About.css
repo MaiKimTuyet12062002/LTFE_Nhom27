@@ -19,8 +19,8 @@ h1 {
 }
 
 .image {
-    width: 100%;
-    height: auto;
+    width: 800px;
+    height: 800px;
 }
 
 .about {
@@ -37,13 +37,14 @@ h1 {
     left: 50px; /* Vị trí trái của phần tử so với phần tử cha */
     right: 50px;
     background-color: rgba(173, 171, 171, 0.5); /* Độ trong suốt của phần tử */
-    padding: 20px; /* Khoảng cách giữa nội dung và phần tử */
+    padding: 30px; /* Khoảng cách giữa nội dung và phần tử */
     z-index: 1; /* Hiển thị phần tử trên phần tử cha */
     /*max-width: 400px; !* Chiều rộng tối đa của phần tử con *!*/
 }
 p{
     align-content: center;
     color: white;
+    font-size: 20px;
 }
 /*p {*/
 /*    text-align: justify;*/
