@@ -5,16 +5,14 @@ const PaginationPage = () => {
     return (
         <MDBRow>
             <MDBCol>
-                <MDBPagination className="mb-5">
+                <MDBPagination className="mb-5" style={{justifyContent: "center"}}>
                     <MDBPageItem>
                         <MDBPageNav aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                         </MDBPageNav>
                     </MDBPageItem>
                     <MDBPageItem>
-                        <MDBPageNav>
-                            1
-                        </MDBPageNav>
+                        <MDBPageNav>1</MDBPageNav>
                     </MDBPageItem>
                     <MDBPageItem>
                         <MDBPageNav>2</MDBPageNav>
@@ -23,7 +21,7 @@ const PaginationPage = () => {
                         <MDBPageNav>3</MDBPageNav>
                     </MDBPageItem>
                     <MDBPageItem>
-                        <MDBPageNav aria-label="Previous">
+                        <MDBPageNav aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                         </MDBPageNav>
                     </MDBPageItem>
