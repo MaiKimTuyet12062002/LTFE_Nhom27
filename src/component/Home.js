@@ -1,7 +1,6 @@
 import React from "react";
 import Products from "./Products";
 import "./css/home.css"
-import PaginationPage from "./PaginationPage";
 
 const Home = () => {
     return (
