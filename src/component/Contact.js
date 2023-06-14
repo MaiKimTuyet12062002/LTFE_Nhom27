@@ -34,6 +34,13 @@ function Contact() {
                     </div>
                 </div>
             </div>
+
+            <div id="map" style={{width: "800px", height: "450px", margin: "185px"}}><h3>Bạn có thể liên hệ chungs tôi qua địa chỉ sau:</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.214594666049!2d106.7895730147193!3d10.87127639225723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175276398969f7b%3A0x9672b7efd0893fc4!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBOw7RuZyBMw6JtIFRwLiBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1667629178457!5m2!1svi!2s"
+                    width="1150" height="450" style={{border: 0}} allowFullScreen="" loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     )
 }
