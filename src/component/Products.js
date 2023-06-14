@@ -147,7 +147,7 @@ function Products() {
                 </div>
             </div>
             <div className="row justify-content-center">
-             <ShowProducts/>}
+             <ShowProducts/>
             </div>
         </div>
     </div>);

@@ -13,9 +13,9 @@ const Home = () => {
                     height="550px"
                 />
             </div>
-            <Products/>
-        </div>
-    );
+    <Products/>
+</div>
+);
 };
 
 export default Home;
