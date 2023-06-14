@@ -37,20 +37,7 @@ function Products() {
     const handlePageChange = (pageNumber) => {
         setCurrentPage(pageNumber);
     };
-    const Loading = () => {
-        return (<>
-            Loading...
-            <div className="col-md-3">
-                <Skeleton height={300}/>
-            </div>
-            <div className="col-md-3">
-                <Skeleton height={300}/>
-            </div>
-            <div className="col-md-3">
-                <Skeleton height={300}/>
-            </div>
-        </>);
-    };
+
     const filterProduct = (cat) => {
         const updatedList = data.filter((x) => x.category === cat);
         setFilter(updatedList);
@@ -160,7 +147,7 @@ function Products() {
                 </div>
             </div>
             <div className="row justify-content-center">
-                {loading ? <Loading/> : <ShowProducts/>}
+             <ShowProducts/>}
             </div>
         </div>
     </div>);
