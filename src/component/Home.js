@@ -15,7 +15,6 @@ const Home = () => {
                 />
             </div>
             <Products/>
-            <PaginationPage/>
         </div>
     );
 };
