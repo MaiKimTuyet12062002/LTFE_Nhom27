@@ -1,11 +1,12 @@
 import React from "react";
+
 function Contact() {
     return (
         <div>
             <div className="container mb-5">
                 <div className="row">
                     <div className="col-12 text-center py-4 my-4">
-                        <h1>Bạn cần hỗ trợ vấn đề gì?</h1>
+                        <h1 style={{color: "black"}}>Bạn cần hỗ trợ vấn đề gì?</h1>
                         <hr/>
                     </div>
                 </div>
