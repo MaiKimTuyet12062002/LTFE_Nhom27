@@ -10,7 +10,7 @@ export default function SearchBar({onSearch}) {
 
     return (
         <div className="search">
-            <input placeholder="Nhập tên sản phẩm"
+            <input placeholder="Nhập tên sản phẩm" style={{width:"75%"}}
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}

@@ -14,7 +14,7 @@ export default function Navbar() {
                             className="logo1"
                             alt="logo"
                             src="/assets/Logo/logo.png"
-                            height="80px"
+                            height="40px"
                         />
                     </NavLink>
                     <button

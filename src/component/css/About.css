@@ -24,6 +24,7 @@ h1 {
 }
 
 .about {
+    margin-top: 80px;
     position: relative; /* Để phần tử con có vị trí tuyệt đối đối với phần tử cha */
 }
 
