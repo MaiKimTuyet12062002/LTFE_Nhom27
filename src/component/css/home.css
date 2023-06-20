@@ -2,9 +2,13 @@
 html {
     background-color: #e4dacc;
 }
+.carousel{
+    margin-top: 111px;
+}
 
-.hero {
-    background-color: #e4dacc;
+.hero .card-img{
+    display: flex;
+    position: relative;
 }
 
 /*Products.js*/
@@ -134,11 +138,7 @@ html {
     transform: scale(0.75);
 }
 
-/*Home.js*/
-.hero .card-img{
-    display: flex;
-    position: relative;
-}
+
 /*ForgotPass.js*/
 .form-gap {
     padding-top: 70px;

@@ -54,38 +54,116 @@ function Products() {
         );
 
         return (<>
-                <div>
-                    <Search onSearch={handleSearch}/>
-                </div>
-                <div className="buttons d-flex justify-content-center mb-5 pb-5">
-                    <button className="btn btn-outline-dark me-2" onClick={() => setFilter(data)}> Tất cả sản phẩm
-                    </button>
-                    <button className="btn btn-outline-dark me-2"
-                            onClick={() => filterProduct("Giấy In ấn - Photo")}> Giấy
-                        In ấn - Photo
-                    </button>
-                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Bìa - Kệ - Rổ")}> Bìa -
-                        Kệ -
-                        Rổ
-                    </button>
-                    <button className="btn btn-outline-dark me-2"
-                            onClick={() => filterProduct("Sổ - Tập - Bao thư")}> Sổ -
-                        Tập - Bao thư
-                    </button>
-                    <button className="btn btn-outline-dark me-2"
-                            onClick={() => filterProduct("Băng keo - Dao - Kéo")}> Băng keo - Dao - Kéo
-                    </button>
-                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Bút - Mực")}> Bút - Mực
-                    </button>
-                    <button className="btn btn-outline-dark me-2"
-                            onClick={() => filterProduct("Dụng cụ văn phòng")}> Dụng
-                        cụ văn phòng
-                    </button>
-                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Máy tính Casio")}> Máy
-                        tính
-                        Casio
-                    </button>
-                </div>
+                {/*<div>*/}
+                {/*    <Search onSearch={handleSearch}/>*/}
+                {/*</div>*/}
+                {/*<div className="buttons d-flex justify-content-center mb-5 pb-5">*/}
+                {/*    <button className="btn btn-outline-dark me-2" onClick={() => setFilter(data)}> Tất cả sản phẩm*/}
+                {/*    </button>*/}
+                {/*    <button className="btn btn-outline-dark me-2"*/}
+                {/*            onClick={() => filterProduct("Giấy In ấn - Photo")}> Giấy*/}
+                {/*        In ấn - Photo*/}
+                {/*    </button>*/}
+                {/*    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Bìa - Kệ - Rổ")}> Bìa -*/}
+                {/*        Kệ -*/}
+                {/*        Rổ*/}
+                {/*    </button>*/}
+                {/*    <button className="btn btn-outline-dark me-2"*/}
+                {/*            onClick={() => filterProduct("Sổ - Tập - Bao thư")}> Sổ -*/}
+                {/*        Tập - Bao thư*/}
+                {/*    </button>*/}
+                {/*    <button className="btn btn-outline-dark me-2"*/}
+                {/*            onClick={() => filterProduct("Băng keo - Dao - Kéo")}> Băng keo - Dao - Kéo*/}
+                {/*    </button>*/}
+                {/*    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Bút - Mực")}> Bút - Mực*/}
+                {/*    </button>*/}
+                {/*    <button className="btn btn-outline-dark me-2"*/}
+                {/*            onClick={() => filterProduct("Dụng cụ văn phòng")}> Dụng*/}
+                {/*        cụ văn phòng*/}
+                {/*    </button>*/}
+                {/*    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("Máy tính Casio")}> Máy*/}
+                {/*        tính*/}
+                {/*        Casio*/}
+                {/*    </button>*/}
+                {/*</div>*/}
+
+
+                <nav className="navbar navbar-expand-lg navbar-dark mt-3 mb-5 shadow p-2"
+                     style={{backgroundcolor: "#607D8B"}}>
+                    <div className="container-fluid">
+                        <a className="navbar-brand" href="#" style={{color:"black"}}>Danh mục:</a>
+
+                        <button
+                            className="navbar-toggler"
+                            type="button"
+                            data-mdb-toggle="collapse"
+                            data-mdb-target="#navbarSupportedContent2"
+                            aria-controls="navbarSupportedContent2"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i className="fas fa-bars"></i>
+                        </button>
+
+
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent2">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li className="nav-item acitve">
+                                    <button className="btn btn-outline-dark me-2" onClick={() => setFilter(data)}> Tất
+                                        cả sản phẩm
+                                    </button>
+                                </li>
+                                <li className="nav-item">
+                                    <button className="btn btn-outline-dark me-2"
+                                            onClick={() => filterProduct("Giấy In ấn - Photo")}> Giấy
+                                        In ấn - Photo
+                                    </button>
+                                </li>
+                                <li className="nav-item">
+                                    <button className="btn btn-outline-dark me-2"
+                                            onClick={() => filterProduct("Bìa - Kệ - Rổ")}> Bìa -
+                                        Kệ -
+                                        Rổ
+                                    </button>
+                                </li>
+                                <li className="nav-item">
+                                    <button className="btn btn-outline-dark me-2"
+                                            onClick={() => filterProduct("Sổ - Tập - Bao thư")}> Sổ -
+                                        Tập - Bao thư
+                                    </button>
+                                </li>
+                                <li className="nav-item">
+                                    <button className="btn btn-outline-dark me-2"
+                                            onClick={() => filterProduct("Băng keo - Dao - Kéo")}> Băng keo - Dao - Kéo
+                                    </button>
+                                </li>
+                                <li className="nav-item">
+                                    <button className="btn btn-outline-dark me-2"
+                                            onClick={() => filterProduct("Bút - Mực")}> Bút - Mực
+                                    </button>
+                                </li>
+                                <li className="nav-item">
+                                    <button className="btn btn-outline-dark me-2"
+                                            onClick={() => filterProduct("Máy tính Casio")}> Máy
+                                        tính
+                                        Casio
+                                    </button>
+                                </li>
+                            </ul>
+
+
+                            <form className="w-auto py-1" style={{maxwidth: "12rem"}}>
+                                {/*<input type="search" className="form-control rounded-0" placeholder="Search"*/}
+                                {/*       aria-label="Search"/><Search onSearch={handleSearch}/>*/}
+                                {/*<div>*/}<Search onSearch={handleSearch}/>
+                                {/*    <Search onSearch={handleSearch}/>*/}
+                                {/*</div>*/}
+                            </form>
+
+                        </div>
+                    </div>
+                </nav>
+
+
                 {/*{filter.map((product) => {*/}
                 {currentProducts.map((product) => {
                     return (<div className="col-md-3 h-100 text-center py-4" key={product.id}>
@@ -147,7 +225,7 @@ function Products() {
                 </div>
             </div>
             <div className="row justify-content-center">
-             <ShowProducts/>
+                <ShowProducts/>
             </div>
         </div>
     </div>);
