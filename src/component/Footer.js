@@ -26,15 +26,13 @@ export default function Footer() {
                         </div>
                         <div class="col-md-3">
                             <div class="useful-link">
-                                <h2>Useful Links</h2>
+
                                 <img src="./assets/images/about/home_line.png" alt="" class="img-fluid"/>
-                                <div class="use-links">
-                                    <li><Link to="/"><i class="fa-solid fa-angles-right"></i> Trang chủ</Link></li>
-                                    <li><Link to="/products"><i className="fa-solid fa-angles-right"></i> Sản
-                                        Phẩm</Link></li>
-                                    <li><Link to="/about"><i className="fa-solid fa-angles-right"></i> Về chúng
-                                        tôi</Link></li>
-                                    <li><Link to="/contact"><i className="fa-solid fa-angles-right"></i> Liên hệ</Link>
+                                <div class="use-links" style={{textDecoration: "none"}}>
+                                    <li><Link to="/"> Trang chủ</Link></li>
+                                    <li><Link to="/products">Sản Phẩm</Link></li>
+                                    <li><Link to="/about"> Về chúng tôi</Link></li>
+                                    <li><Link to="/contact"> Liên hệ</Link>
                                     </li>
                                 </div>
                             </div>
@@ -44,10 +42,10 @@ export default function Footer() {
                             <div class="social-links">
                                 <h2>Theo dõi chúng tôi</h2>
                                 <img src="" alt=""/>
-                                <div class="social-icons">
-                                    <li><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-                                    <li><a href=""><i className=" fa-user-plus"></i> Instagram</a></li>
-                                    <li><a href=""><i className="fa-brands fa-linkedin"></i> Linkedin</a></li>
+                                <div class="social-icons" style={{textDecoration: "none"}}>
+                                    <li><a href=""> Facebook</a></li>
+                                    <li><a href=""> Instagram</a></li>
+                                    <li><a href=""> Linkedin</a></li>
                                 </div>
                             </div>
 
@@ -57,9 +55,9 @@ export default function Footer() {
                             <div class="address">
                                 <h2>Địa chỉ</h2>
                                 <img src="" alt="" class="img-fluid"/>
-                                <div class="address-links">
-                                    <li><a href=""><i class="fa-solid fa-phone"></i> +91 90904500112</a></li>
-                                    <li><a href=""><i class="fa-solid fa-envelope"></i>TuyetThi@1234567.com</a></li>
+                                <div class="address-links" style={{textDecoration: "none"}}>
+                                    <li><a href=""> Sđt: 90904500112</a></li>
+                                    <li><a href="">Email: TuyetThi@1234567.com</a></li>
                                 </div>
                             </div>
                         </div>
